@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<style>
+  .cover {
+    background-size: cover !important;
+    
+  }
+
+  .dt {
+    display: table;
+  }
+
+  .dtc {
+    display: table-cell;
+  }
+
+  .athelas {
+    font-family: athelas, georgia, serif;
+
+  }
+
+  .i {
+    font-style: italic;
+  }
+
+  .fs-normal {
+    font-style: normal;
+  }
+
+  .fw1 {
+    font-weight: 100;
+  }
+
+  .vh-100 {
+    height: 100vh;
+  }
+
+  .tracked {
+    letter-spacing: .1em;
+  }
+
+  .lh-title {
+    line-height: 1.25;
+  }
+
+  .lh-copy {
+    line-height: 1.5;
+  }
+
+  .w-100 {
+    width: 100%;
+  }
+
+  .white-70 {
+    color: rgba(255, 255, 255, .7);
+  }
+
+  .white-60 {
+    color: rgba(255, 255, 255, .6);
+  }
+
+  .white {
+    color: #fff;
+  }
+
+  .bg-dark-gray {
+    background-color: #333;
+  }
+
+  .pv5 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .ph0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ph2 {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+
+  .mb2 {
+    margin-bottom: .5rem;
+  }
+
+  .mh0 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .tc {
+    text-align: center;
+  }
+
+  .ttu {
+    text-transform: uppercase;
+  }
+
+  .f1 {
+    font-size: 3rem;
+    top: 5px;
+
+  }
+
+  .f4 {
+    font-size: 1.25rem;
+  }
+
+  .f5 {
+    font-size: 1rem;
+  }
+
+  .f6 {
+    font-size: .875rem;
+  }
+
+  .measure {
+    max-width: 30em;
+  }
+
+  .measure-wide {
+    max-width: 34em;
+  }
+
+  .center {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .v-mid {
+    vertical-align: middle;
+  }
+
+  @media screen and (min-width: 60em) {
+    .f-headline-l {
+      font-size: 6rem;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Lato', 'Arial', sans-serif;
+    }
+
+    /* Navbar */
+
+    @import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+
+    * {
+      font-family: "Titillium Web", sans-serif;
+    }
+
+    body {
+      height: 2000px;
+
+    }
+
+    .navbar .navbar-brand {
+      font-size: 20px;
+    }
+
+    .navbar .nav-item {
+      padding: 10px 20px;
+    }
+
+    .navbar .nav-link {
+      font-size: 20px;
+      margin-left: 10px;
+    }
+
+    .fa-bars {
+      color: #007bff;
+      font-size: 20px;
+    }
+
+    /* .nav1{
+  background-color: black;
+}
+ */
+
+    .Nav1 {
+      background-color: black;
+    }
+
+    /*   Dropdown */
+
+    .dropbtn {
+      background-color: white;
+      color: white;
+      padding: 0px;
+      font-size: px;
+      border: none;
+      /*   z-index: 4; */
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      /*   z-index: 3; */
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #017BFF;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: white;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: white;
+    }
+
+    .navbar {}
+</style>
+<html>
+
+<head>
+</head>
+
+<body>
+
+  <div>
+
+    <nav class=" navbar sticky-top navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Portoflio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto w-100 justify-content-end">
+            <li class="nav-item active">
+              <a class="nav-link" href="Problem.html">Problem... <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Accessing.html">Accessing...</a>
+            <li class="nav-item">
+              <a class="nav-link" href="Commu.html">Communication...</a>
+            <li class="nav-item">
+              <a class="nav-link" href="Creativity.html">Creativity...</a>
+            <li class="nav-item dropdown ">
+              <button class="dropbtn"><a class="nav-link" href="#">Other</a></button>
+              <div class="dropdown-content">
+                <a href="Initiative.html">Initiative...</a>
+                <a href="Citizenship.html">Citizenship...</a>
+                <a href="Intern.html">Intern & Community</a>
+                <!--                 <a href="#">Link 3</a> -->
+              </div>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+  </div>
+
+
+
+  <article class="athelas">
+    <div class="cover1 vh-100 dt w-100 tc bg-dark-gray white cover"
+      style="background:url(https://cdn.inseego.com/images/trgu17ld/production/d792cdec550f780e831bfb4a434221b7957cd888-2617x1384.jpg?auto=format">
+      <div class="dtc v-mid">
+        <header class="white-70">
+          <h2 class="f6 fw1 ttu tracked mb2 lh-title">Competency #6</h2>
+          <h3 class="f6 fw1 lh-title"></h3>
+        </header>
+        <h1 class="f1 f-headline-l fw1 i white-60">Citizenship and
+Responsibility
+        </h1>
+        <blockquote class="ph0 mh0 measure f4 lh-copy center">
+          <p class="fw1 white-70">
+            <!--           It's a space for you to promote yourself. -->
+            
+          </p>
+          <cite class="f6 ttu tracked fs-normal">Zahidullah Halimi</cite>
+        </blockquote>
+      </div>
+    </div>
+    <div class="center measure-wide f5 pv5 lh-copy ph2">
+      <h1 class="f1 lh-title">Project Name</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor neque mi, quis porta dui tincidunt
+        ac. Pellentesque eleifend ante non nunc tempus, ut dapibus massa commodo. Donec euismod urna sit amet porttitor
+        iaculis. Nulla non mauris libero. Nunc id mattis ex. Aliquam auctor dui nisi, at auctor sapien mollis in. Cras
+        viverra dapibus lacus eget congue. Suspendisse potenti..
+      </p>
+      <p>
+        In porttitor laoreet nisl, eu rhoncus mi molestie sed. Integer et hendrerit nisi, a porta dui. Integer suscipit
+        ante sed lorem tincidunt, ut hendrerit risus laoreet. Orci varius natoque penatibus et magnis dis parturient
+        montes, nascetur ridiculus mus. Praesent tempus at nunc et interdum. In vestibulum ex nec lobortis hendrerit.
+        Aliquam libero ante, interdum quis sodales nec, venenatis sed neque. Nullam sodales enim accumsan massa euismod,
+        sit amet tincidunt neque porta. Nulla aliquet leo non nisi tempor placerat. Etiam tempor, ex eget mattis porta,
+        nulla ligula tempus velit, vel blandit massa sem sed eros. Suspendisse iaculis efficitur pellentesque. Mauris
+        non facilisis purus.
+      </p>
+      <p>
+        Phasellus sit amet nisi sodales, luctus leo nec, ultrices purus. Aliquam in nunc mi. Aliquam erat volutpat.
+        Praesent faucibus volutpat odio sit amet malesuada. Vivamus posuere mi imperdiet maximus cursus. Morbi mattis,
+        orci vel pretium imperdiet, felis felis eleifend felis, sed hendrerit dui ante a lorem. Vivamus pretium
+        scelerisque leo eget dapibus. Proin vel nisl mauris. Nullam sed velit turpis.
+      </p>
+      <p>
+        Quisque egestas finibus urna. Praesent sit amet libero hendrerit, tristique augue id, posuere nisl. Praesent
+        molestie risus in dignissim aliquam. Nulla hendrerit ante vel ipsum facilisis porttitor. Vestibulum eu est
+        feugiat, blandit lorem nec, vehicula quam. Pellentesque in lacus in orci vehicula rutrum et eu lectus. Curabitur
+        eu ornare enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+        Donec ornare egestas turpis sit amet cursus. Cras nec nisi nec ex maximus fermentum. Nulla gravida odio luctus
+        elit pretium rutrum. Curabitur sollicitudin nisi et magna egestas, quis ultrices tellus bibendum. Phasellus
+        lobortis nulla vel nisl luctus, at scelerisque diam vulputate. Nunc libero est, rutrum non sem luctus,
+        vestibulum posuere magna. Praesent a tempor arcu, vitae vehicula neque.
+      </p>
+      <p>
+        Nam consequat eget nibh et lacinia. Ut facilisis non nisi a mollis. Vestibulum cursus auctor augue a ultricies.
+        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce efficitur, purus in
+        blandit eleifend, sapien velit consectetur lacus, ut rhoncus dui ligula sed quam. Suspendisse sit amet diam
+        tempus, iaculis nisi ac, sollicitudin sem. Ut dictum condimentum lectus, a lacinia leo commodo eu. Nullam porta
+        turpis neque, suscipit euismod ante commodo nec. Integer dictum lacus nibh, quis porta lorem faucibus vel. Donec
+        risus enim, mollis nec nisl et, dictum finibus augue. Duis sit amet velit in nisl iaculis dapibus. Nunc ut purus
+        nec felis suscipit faucibus. Suspendisse non tortor nulla. Nullam non dignissim lectus, sit amet porttitor
+        ipsum.
+      </p>
+    </div>
+  </article>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<script>
+
+</script>
+
+</html>
