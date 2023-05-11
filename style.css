@@ -243,3 +243,132 @@
   }
 } */
   
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .callout {
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    margin-left: 20px;
+    max-width: 300px;
+    border: solid 5px;
+    margin: 0px;
+    border-color: black;
+  }
+
+  .callout-header {
+    padding: 25px 15px;
+    background: darkblue;
+    font-size: 30px;
+    color: white;
+  }
+
+  .callout-container {
+    padding: 15px;
+    background-color: white;
+    color: red;
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .closebtn:hover {
+    color: red;
+  }
+
+  .clock {
+    position: absolute;
+    top: 80%;
+    left: 34%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #17D4FE;
+    font-size: 20px;
+    font-family: Orbitron;
+    letter-spacing: 5px;
+  }
+
+  .callout {
+
+    font-family: futura;
+    font-style: italic;
+
+
+    margin: auto;
+    text-align: center;
+
+    color: #313131;
+    font-size: 20px;
+    font-weight: bold;
+    position: fixed;
+    -webkit-animation: colorchange 20s infinite alternate;
+
+
+  }
+
+
+  .alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    position: fixed;
+    z-index: 5;
+    left: 23%;
+  }
+
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .closebtn:hover {
+    color: black;
+  }
+
+
+
+  .Row1 {
+    background-color: #fdf9f9;
+    background-image: linear-gradient(132deg, #fdf9f9 0%, #4861aa 93%, #ffffff 99%, #000000 100%);
+
+
+
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+
+  }
+
+  .Row1:hover {
+
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .Body1 {
+    background-color: white;
+  }
