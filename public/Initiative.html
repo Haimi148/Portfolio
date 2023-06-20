@@ -239,6 +239,50 @@
     }
 
     .navbar {}
+
+
+    button1 {
+  --color: #0077ff;
+  font-family: inherit;
+  display: inline-block;
+  width: 6em;
+  height: 2.6em;
+  line-height: 2.5em;
+  overflow: hidden;
+  margin: 20px;
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+}
+
+button1::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 150px;
+  height: 200px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+button1:hover {
+  color: white;
+}
+
+button1:before {
+  top: 100%;
+  left: 100%;
+  transition: .3s all;
+}
+
+button1:hover::before {
+  top: -30px;
+  left: -30px;
+}
+
 </style>
 <html>
 
@@ -274,7 +318,7 @@
                 <a href="Initiative.html">Initiative...</a>
                 <a href="Citizenship.html">Citizenship...</a>
                 <a href="Intern.html">Intern & Community</a>
-                <!--                 <a href="#">Link 3</a> -->
+                <a href="Future.html">College</a>
               </div>
 
             </li>
@@ -317,9 +361,7 @@
       <h3>Class: ECE</h3>
       <p>
       <h5>
-        This was a major school project that demanded a significant amount of time. As a team, we developed and worked
-        on a business venture, conducting research to find ways to make it more successful. Additionally, we understood
-        the long-term benefits this experience would bring to our future endeavors.</h5>
+        In this project, our team invested a lot of time into developing a business idea. We worked together to conduct research and find ways to make it more successful. As a result, we made significant progress and advanced the project even further.</h5>
       <br>
       <hr>
       <p>
@@ -361,8 +403,12 @@ his or her learning.</li>
         <h1>Project</h1>
         <br>
         <hr>
-        <iframe src="https://drive.google.com/file/d/16vIZORsYCItUHS5SuKp8gQh9vOmlGoDa/preview" width="640" height="480"
-          allow="autoplay"></iframe>
+        <embed src="https://sites.google.com/view/puresavvy/home" style="width:500px; height: 300px;">
+          <h4>Project Link</h4>
+          <a href="https://sites.google.com/view/puresavvy/home" target="_blank"><button1>
+        Click here
+</button1></a>
+
 
     </div>
   </article>
